@@ -15,4 +15,11 @@ public class HelloWorldController {
           // Returns a simple greeting message
           return "Hello from BridgeLabz";
      }
+
+     // Handles GET requests to /api/ and responds with a simple message
+     @GetMapping("/")
+     public String displayGreeting() {
+          // Returns the greeting message as the response
+          return "Hello from BridgeLabz";
+     }
 }
