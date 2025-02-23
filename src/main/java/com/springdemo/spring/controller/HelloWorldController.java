@@ -22,4 +22,12 @@ public class HelloWorldController {
           // Returns the greeting message as the response
           return "Hello from BridgeLabz";
      }
+
+     // Handles GET requests to /api/helloworld
+     @GetMapping("/helloworld")
+     public String sayHelloWorld() {
+          // Returns a simple hello message
+          return "Hello from BridgeLabz";
+     }
+
 }
